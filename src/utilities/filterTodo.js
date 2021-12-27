@@ -4,7 +4,7 @@ const filterTodo = (todos, status) => {
             return todos.filter(todo => todo.isComplete === false);
         case 'DONE':
             return todos.filter(todo => todo.isComplete === true);
-        default:
+        default: return todos
     }
 }
 

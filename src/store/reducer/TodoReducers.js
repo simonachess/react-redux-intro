@@ -17,7 +17,7 @@ const init = {
             'id': 1234568,
         },
     ],
-    filter: 'VISOS',
+    filter: 'ALL',
 }
 
 const removeTodo = (todos, id) => {
