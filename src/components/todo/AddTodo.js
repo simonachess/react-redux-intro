@@ -38,7 +38,7 @@ const AddTodo = (props) => {
 
     return (
         <>
-            <Button className='mb-3' variant='danger' onClick={handleShow}>New task</Button>
+            <Button className='m-3' variant='danger' onClick={handleShow}>New task</Button>
             <Modal show={modal} onHide={handleShow}>
                 <Modal.Header>
                     Create new task
