@@ -17,7 +17,10 @@ const TodoItem = ({ todo, remove, mark }) => {
                 <div className="col-md-5">
                     <div className="ml-auto">
                         <Button color="danger" onClick={() => remove(todo.id)} style={{ marginRight: '10px' }} className="ml-auto">Delete</Button>
-                        <Button color="primary" onClick={() => mark(todo.id)} className="mr-auto">Done</Button>
+                        {
+                            !todo.isComplete && <Button color="primary" onClick={() => mark(todo.id)} className="mr-auto">Done</Button>
+                        }
+
                     </div>
                 </div>
             </div>
