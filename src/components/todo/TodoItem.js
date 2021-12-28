@@ -20,7 +20,6 @@ const TodoItem = ({ todo, remove, mark }) => {
                         {
                             !todo.isComplete && <Button color="primary" onClick={() => mark(todo.id)} className="mr-auto">Done</Button>
                         }
-
                     </div>
                 </div>
             </div>

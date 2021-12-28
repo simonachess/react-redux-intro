@@ -1,5 +1,4 @@
-import { Card, Modal, Form, FormGroup, Button, ListGroupItem } from 'react-bootstrap';
-import { UncontrolledCollapse } from 'reactstrap';
+import { Modal, Form, Button } from 'react-bootstrap';
 
 import { useState } from 'react';
 import { connect } from 'react-redux';
@@ -39,7 +38,7 @@ const AddTodo = (props) => {
 
     return (
         <>
-            <Button variant='danger' onClick={handleShow}>New task</Button>
+            <Button className='mb-3' variant='danger' onClick={handleShow}>New task</Button>
             <Modal show={modal} onHide={handleShow}>
                 <Modal.Header>
                     Create new task
