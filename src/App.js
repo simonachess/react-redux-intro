@@ -9,8 +9,8 @@ function App() {
     <div className="container">
       <div className='row'>
         <div className='col-md-7 m-auto'>
-          <TopNav />
           <AddTodo />
+          <TopNav />
           <TodoList />
         </div>
       </div>
