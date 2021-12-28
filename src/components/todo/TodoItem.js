@@ -1,4 +1,5 @@
-import { Card, Button, ListGroupItem } from 'react-bootstrap';
+import { ListGroupItem } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { UncontrolledCollapse } from 'reactstrap';
 
 const TodoItem = ({ todo, remove, mark }) => {
@@ -12,6 +13,12 @@ const TodoItem = ({ todo, remove, mark }) => {
                     <UncontrolledCollapse toggler={`#toggler${todo.id}`}>
                         {todo.descriptionn}
                     </UncontrolledCollapse>
+                </div>
+                <div className="col-md-5">
+                    <div className="ml-auto">
+                        <Button color="danger" onClick={() => remove(todo.id)} style={{ marginRight: '10px' }} className="ml-auto">Delete</Button>
+                        <Button color="primary" onClick={() => mark(todo.id)} className="mr-auto">Done</Button>
+                    </div>
                 </div>
             </div>
         </ListGroupItem>
